@@ -29,16 +29,16 @@ void FillArray(int[,] matr)
     }
 }
 
-void PrintArrayAverage(int[,] matr)
+void PrintArrayAverage(int[,] inputMatr)
 {
     Console.Write("Среднее арифметическое элементов в каждом столбце: ");
-    for (int i = 0; i < matr.GetLength(1); i++)
+    for (int i = 0; i < inputMatr.GetLength(1); i++)
     {
         double sum = 0;
-        for (int j = 0; j < matr.GetLength(0); j++)
+        for (int j = 0; j < inputMatr.GetLength(0); j++)
         {
-            sum += matr[i,j];
+            sum += inputMatr[i,j];
         }
-        Console.Write($"{sum/matr.GetLength(0)}. ");
+        Console.Write($"{sum/inputMatr.GetLength(0)}. ");
     }
 }

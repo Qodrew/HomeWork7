@@ -36,9 +36,9 @@ void PrintArrayAverage(int[,] inputMatr)
     {
         double sum = 0;
         for (int j = 0; j < inputMatr.GetLength(0); j++)
-        {
-            sum += inputMatr[i,j];
+         {
+            sum += inputMatr[j,i];
         }
-        Console.Write($"{sum/inputMatr.GetLength(0)}. ");
+        Console.Write($"{Math.Round(sum/inputMatr.GetLength(0), 2)}. ");
     }
 }
